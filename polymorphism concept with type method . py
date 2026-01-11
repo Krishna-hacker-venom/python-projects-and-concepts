@@ -1,0 +1,11 @@
+#polymorphism concept with type checking using if-else
+
+def multiply(x, y):
+    # Agar x integer hai aur y string hai
+    if isinstance(x, int) and isinstance(y, str):
+        print(x * y)   # String repetition
+    else:
+        print(x * y)   # Normal multiplication
+
+multiply(4, "k")   # Output: kkkk
+multiply(3, 5)     # Output: 15
